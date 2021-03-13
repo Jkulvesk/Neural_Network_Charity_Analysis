@@ -14,7 +14,7 @@ The purpose of this analysis was to create a binary classifier to predict if app
 
 ### Compiling, Training and Evaluating the Model
 - **Scenario A**: The first model, which is in the AlphabetSoupCharity.ipynb file, used two layers with a combined number of neurons of 110 (80 for layer 1 and 30 for layer 2). The model used was tf.keras.models.Sequential. Activation models used for both layers were relu and the output activation layer used was sigmoid. I also used 100 epochs. The result of runnign this model was a loss of .5756 and accuracy of .7247. See screenshot below.
-- 
+
 ![Screenshots](https://user-images.githubusercontent.com/72076683/111047249-950f0780-8412-11eb-82e3-d8e686a8f264.png)
 
 - **Scenario B**: In this model, I left everything constant except I changed the output activation layer to softmax (which the model name is saved). The result was worse - with 7.1311 loss and .5324 accuracy (screenshot below). I used this because I read that it is good for mutually exclusive categories (this or that) but in talking through the results with a TA, it is better for multiclass analysis (evaluating two or more inputs/targets). 
